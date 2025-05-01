@@ -150,6 +150,14 @@ docker run -p 50051:50051 tts-grpc-app
 
 You can then point the `local_app.py` or any gRPC client to `localhost:50051`.
 
+## Architecture, Model Sources, and Limitations
+
+- Architecture: A straightforward TTS pipeline where user input is captured via the Streamlit frontend, sent to the model for inference, and the generated audio is streamed back and played in the UI.
+
+- Model Source: Utilizes Hugging Face’s seamless-m4t-large-v2 model hosted on the Hugging Face Hub.
+
+- Limitations: Inference can be slow on CPUs due to the model’s size and computational demands.
+
 ## Contributing
 
 Contributions are welcome! Please open issues or submit pull requests for bug fixes and new features.
