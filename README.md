@@ -130,9 +130,10 @@ python return_json.py
 ### json_2_audio.py
 
 Reads a JSON file (e.g., from Postman or cURL) and converts the encoded audio field back into a `.wav` file.
+Just copy and paste the response json into the file's variable and run.
 
 ```bash
-python json_2_audio.py --input response.json --output output.wav
+python json_2_audio.py 
 ```
 
 ## Docker Containerization
