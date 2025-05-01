@@ -13,7 +13,9 @@ This repository provides a complete setup for a text-to-speech (TTS) application
 ## Repository Structure
 
 ```
-├── text_to_speech.proto      # Protocol Buffers definition
+├── tts.proto                 # Protocol Buffers definition
+├── tts_pb2.py                # Protocol File 1
+├── tts_pb2_gprc.py           # Protocol File 2
 ├── server.py                 # gRPC server implementation
 ├── client.py                 # Test client for gRPC server
 ├── local_app.py              # Local Streamlit app using gRPC server
