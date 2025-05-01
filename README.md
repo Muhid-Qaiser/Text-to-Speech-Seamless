@@ -4,7 +4,7 @@
 
 This repository provides a complete setup for a text-to-speech (TTS) application using a gRPC server and a Streamlit front-end. It leverages the Seamless M4T v2 model hosted on Hugging Face Spaces to convert input text into audio. The architecture consists of:
 
-- A gRPC server (`server.py`) defined by a Protocol Buffers (`.proto`) schema.
+- A gRPC server (`server.py`) defined by a Protocol Buffers (`.proto`) schema. Server can handle asynchronous requests from multiple clients.
 - A Streamlit app (`app.py`) deployed remotely on Hugging Face Spaces.
 - A local Streamlit client (`local_app.py`) that interacts with the gRPC server.
 - Utility scripts for testing, JSON handling, and audio conversion.
